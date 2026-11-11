@@ -1,0 +1,251 @@
+@use "variables" as *;
+
+.hero {
+  display: flex;
+  min-height: min(790px, 100vh);
+  min-height: min(790px, 100svh);
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 95px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.12fr 0.88fr;
+  align-items: center;
+  gap: 42px;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-copy .eyebrow {
+  margin-bottom: 14px;
+}
+
+.hero h1 {
+  max-width: 670px;
+  margin: 0;
+  font-family: $font-heading;
+  font-size: clamp(3rem, 6vw, 5.1rem);
+  line-height: 1.02;
+  letter-spacing: -0.065em;
+}
+
+.hero h1 span {
+  color: $color-accent;
+}
+
+.hero-role {
+  margin: 18px 0 16px;
+  font-family: $font-heading;
+  font-size: clamp(1.25rem, 2.4vw, 1.8rem);
+  font-weight: 600;
+}
+
+.hero-role span {
+  color: $color-accent;
+}
+
+.hero-description {
+  max-width: 570px;
+  margin: 0;
+  color: $color-muted;
+  font-size: 1rem;
+}
+
+.hero-actions {
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hero-visual {
+  display: grid;
+  min-height: 450px;
+  place-items: center;
+}
+
+.portrait-frame {
+  position: relative;
+  display: grid;
+  width: min(100%, 410px);
+  aspect-ratio: 1;
+  place-items: center;
+}
+
+.portrait-orbit {
+  position: absolute;
+  inset: 2%;
+  border: 2px solid transparent;
+  border-top-color: $color-accent;
+  border-right-color: $color-accent-dark;
+  border-bottom-color: $color-accent;
+  border-radius: 50%;
+  transform: rotate(-32deg);
+  filter: drop-shadow(0 0 13px rgb(101 237 104 / 15%));
+}
+
+.portrait-image-wrap {
+  position: relative;
+  width: 79%;
+  height: 79%;
+  overflow: hidden;
+  border-radius: 50%;
+  background: $color-surface-light;
+  box-shadow: 0 0 0 12px rgb(27 31 42 / 92%);
+}
+
+.portrait-image-wrap::after {
+  position: absolute;
+  inset: 35% 0 0;
+  background: linear-gradient(transparent, rgb(27 31 42 / 28%));
+  content: "";
+}
+
+.portrait-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 28% center;
+}
+
+.floating-note {
+  position: absolute;
+  z-index: 2;
+  right: -2%;
+  bottom: 13%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 17px 12px 12px;
+  border: 1px solid rgb(255 255 255 / 8%);
+  border-radius: 13px;
+  background: #282e3a;
+  box-shadow: 0 12px 32px rgb(0 0 0 / 22%);
+}
+
+.note-icon {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 10px;
+  color: $color-accent;
+  background: rgb(101 237 104 / 12%);
+  font-size: 1.4rem;
+}
+
+.floating-note strong,
+.floating-note small {
+  display: block;
+}
+
+.floating-note strong {
+  font-size: 0.78rem;
+}
+
+.floating-note small {
+  color: $color-muted;
+  font-size: 0.68rem;
+}
+
+.visual-spark {
+  position: absolute;
+  color: $color-accent;
+}
+
+.spark-one {
+  top: 14%;
+  right: 8%;
+  font-size: 1.7rem;
+}
+
+.spark-two {
+  bottom: 17%;
+  left: 7%;
+  font-size: 2rem;
+}
+
+.scroll-hint {
+  position: absolute;
+  right: 50%;
+  bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: $color-muted;
+  font-size: 0.72rem;
+  transform: translateX(50%);
+}
+
+.scroll-hint span {
+  width: 18px;
+  height: 28px;
+  border: 1px solid rgb(255 255 255 / 30%);
+  border-radius: 99px;
+}
+
+.scroll-hint span::after {
+  display: block;
+  width: 3px;
+  height: 5px;
+  margin: 5px auto;
+  border-radius: 99px;
+  background: $color-accent;
+  content: "";
+  animation: scroll-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes scroll-pulse {
+  50% {
+    transform: translateY(5px);
+    opacity: 0.35;
+  }
+}
+
+.about-section {
+  background: #1e232f;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 80px;
+}
+
+.about-content > p {
+  margin: 0;
+  color: $color-muted;
+  font-size: 1.05rem;
+}
+
+.portfolio-section {
+  background: #1e232f;
+}
+
+.portfolio-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 42px;
+}
+
+.portfolio-intro {
+  max-width: 380px;
+  margin: 0 0 4px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.contact-section {
+  padding-top: 96px;
+  padding-bottom: 112px;
+}

@@ -1,0 +1,109 @@
+@use "variables" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  margin: 0;
+  color: $color-text;
+  background: $color-bg;
+  font-family: $font-body;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: $font-body;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid $color-accent;
+  outline-offset: 4px;
+}
+
+::selection {
+  color: $color-bg;
+  background: $color-accent;
+}
+
+.container {
+  width: min(calc(100% - 64px), $container-width);
+  margin-inline: auto;
+}
+
+.section {
+  position: relative;
+  padding-block: 112px;
+}
+
+.eyebrow {
+  margin: 0 0 16px;
+  color: $color-accent;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.section-heading h2,
+.contact-copy h2 {
+  margin: 0;
+  font-family: $font-heading;
+  font-size: clamp(2.2rem, 4vw, 3.3rem);
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+}
+
+.section-heading h2 span,
+.contact-copy h2 span {
+  color: $color-accent;
+}
+
+.section-heading-centered {
+  max-width: 660px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.section-intro,
+.portfolio-intro {
+  color: $color-muted;
+}
+
+.section-intro {
+  max-width: 540px;
+  margin: 18px auto 0;
+}

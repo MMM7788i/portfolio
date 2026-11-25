@@ -21,7 +21,9 @@
   <body>
     <header class="site-header" id="top">
       <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="Home"> M<span>.</span> </a>
+        <a class="brand" href="#top" aria-label="Home">
+          Portfolio<span>.</span>
+        </a>
         <button
           class="menu-toggle"
           type="button"
@@ -103,14 +105,6 @@
                   fetchpriority="high"
                 />
               </div>
-              <div class="floating-note">
-                <span class="note-icon">✳</span>
-                <span
-                  ><strong>Creative</strong><small>and developer</small></span
-                >
-              </div>
-              <span class="visual-spark spark-one">✳</span>
-              <span class="visual-spark spark-two">+</span>
             </div>
           </div>
         </div>
@@ -164,8 +158,14 @@
           <div class="skills-grid">
             <article class="skill-card">
               <div class="skill-icon skill-icon-html">5</div>
-              <h3>HTML & CSS</h3>
-              <p>Semantic markup, responsive layouts, and modern styling.</p>
+              <h3>HTML</h3>
+              <p>Semantic markup and accessible page structure.</p>
+              <div class="skill-track"><span style="--level: 92%"></span></div>
+            </article>
+            <article class="skill-card">
+              <div class="skill-icon skill-icon-css" aria-hidden="true">#</div>
+              <h3>CSS</h3>
+              <p>Responsive layouts, modern styling, and animations.</p>
               <div class="skill-track"><span style="--level: 92%"></span></div>
             </article>
             <article class="skill-card">
@@ -188,6 +188,14 @@
               <p>Version control, project collaboration, and code hosting.</p>
               <div class="skill-track"><span style="--level: 76%"></span></div>
             </article>
+            <article class="skill-card">
+              <div class="skill-icon skill-icon-netlify" aria-hidden="true">
+                N
+              </div>
+              <h3>Netlify</h3>
+              <p>Deploying and hosting websites online.</p>
+              <div class="skill-track"><span style="--level: 76%"></span></div>
+            </article>
           </div>
         </div>
       </section>
@@ -200,109 +208,233 @@
               <h2>Recent <span>work</span></h2>
             </div>
             <p class="portfolio-intro">
-              Every project is an opportunity to turn a fresh idea into a
-              thoughtful, easy-to-use experience.
+              Explore projects I have worked on and browse their source code on
+              GitHub.
             </p>
           </div>
           <div class="projects-grid">
             <article class="project-card">
               <div class="project-art project-art-one">
-                <div class="mock-browser">
-                  <div class="mock-dots"><i></i><i></i><i></i></div>
-                  <div class="mock-content">
-                    <span class="mock-label">NOVA STUDIO</span>
-                    <strong>Design<br />that moves.</strong>
-                    <span class="mock-button"></span>
-                  </div>
-                </div>
+                <a
+                  class="live-project-preview"
+                  href="https://infinizai44.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit the Infinizai44 live website"
+                >
+                  <span class="live-project-status">LIVE WEBSITE</span>
+                  <strong>MMM7788i<span>/infinizai44</span></strong>
+                  <span class="live-project-visit">Visit website ↗</span>
+                </a>
               </div>
               <div class="project-meta">
                 <div>
-                  <h3>Nova Studio</h3>
-                  <p>Landing page for a creative agency</p>
-                </div>
-                <span class="project-arrow" aria-hidden="true">↗</span>
-              </div>
-              <div class="project-tags">
-                <span>HTML</span><span>SCSS</span><span>JavaScript</span>
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-art project-art-two">
-                <div class="shop-preview">
-                  <span class="shop-mark">form<span>.</span></span>
-                  <div class="shop-shape"></div>
-                  <div class="shop-caption">
-                    <span>Daily objects</span
-                    ><strong>Simple things,<br />beautifully made.</strong>
-                  </div>
-                </div>
-              </div>
-              <div class="project-meta">
-                <div>
-                  <h3>Form & Function</h3>
-                  <p>A concept for a minimalist online store</p>
-                </div>
-                <span class="project-arrow" aria-hidden="true">↗</span>
-              </div>
-              <div class="project-tags">
-                <span>Responsive</span><span>UI Design</span><span>SCSS</span>
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-art project-art-three">
-                <div class="dashboard-preview">
-                  <span class="dash-title">Your week</span>
-                  <div class="dash-number">
-                    Focus time <strong>32.5h</strong>
-                  </div>
-                  <div class="dash-chart">
-                    <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-                  </div>
-                  <div class="dash-footer">
-                    <span>Mon</span><span>Tue</span><span>Wed</span
-                    ><span>Thu</span><span>Fri</span>
-                  </div>
-                </div>
-              </div>
-              <div class="project-meta">
-                <div>
-                  <h3>Focus Dashboard</h3>
-                  <p>A personal planning dashboard</p>
-                </div>
-                <span class="project-arrow" aria-hidden="true">↗</span>
-              </div>
-              <div class="project-tags">
-                <span>JavaScript</span><span>Dashboard</span><span>CSS</span>
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-art project-art-one">
-                <div class="mock-browser">
-                  <div class="mock-dots"><i></i><i></i><i></i></div>
-                  <div class="mock-content">
-                    <span class="mock-label">MUHAMMAD-ALI MARDONOV</span>
-                    <strong>Frontend<br />Developer.</strong>
-                    <span class="mock-button"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="project-meta">
-                <div>
-                  <h3>Personal Portfolio</h3>
-                  <p>My portfolio and frontend development work</p>
+                  <h3>Infinizai44</h3>
+                  <p>Live website and source code on GitHub</p>
                 </div>
                 <a
                   class="project-arrow"
-                  href="https://portfolio-lastname.netlify.app/#top"
+                  href="https://github.com/MMM7788i/infinizai44"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="View Personal Portfolio live site"
+                  aria-label="View Infinizai44 GitHub repository"
                   >↗</a
                 >
               </div>
               <div class="project-tags">
-                <span>HTML</span><span>SCSS</span><span>JavaScript</span>
+                <span>Netlify</span><span>GitHub</span>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art project-art-two">
+                <a
+                  class="live-project-preview"
+                  href="https://community23.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit the Community live website"
+                >
+                  <span class="live-project-status">LIVE WEBSITE</span>
+                  <strong>MMM7788i<span>/community</span></strong>
+                  <span class="live-project-visit">Visit website ↗</span>
+                </a>
+              </div>
+              <div class="project-meta">
+                <div>
+                  <h3>Community</h3>
+                  <p>Live website and source code on GitHub</p>
+                </div>
+                <a
+                  class="project-arrow"
+                  href="https://github.com/MMM7788i/community"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View Community GitHub repository"
+                  >↗</a
+                >
+              </div>
+              <div class="project-tags">
+                <span>Netlify</span><span>GitHub</span>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art project-art-three">
+                <a
+                  class="live-project-preview"
+                  href="https://11name.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit the 11 live website"
+                >
+                  <span class="live-project-status">LIVE WEBSITE</span>
+                  <strong>MMM7788i<span>/11</span></strong>
+                  <span class="live-project-visit">Visit website ↗</span>
+                </a>
+              </div>
+              <div class="project-meta">
+                <div>
+                  <h3>11</h3>
+                  <p>Live website and source code on GitHub</p>
+                </div>
+                <a
+                  class="project-arrow"
+                  href="https://github.com/MMM7788i/11"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View 11 GitHub repository"
+                  >↗</a
+                >
+              </div>
+              <div class="project-tags">
+                <span>Netlify</span><span>GitHub</span>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art project-art-one">
+                <a
+                  class="live-project-preview"
+                  href="https://freebies45.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit the Freebies live website"
+                >
+                  <span class="live-project-status">LIVE WEBSITE</span>
+                  <strong>MMM7788i<span>/freebies</span></strong>
+                  <span class="live-project-visit">Visit website ↗</span>
+                </a>
+              </div>
+              <div class="project-meta">
+                <div>
+                  <h3>Freebies</h3>
+                  <p>Live website and source code on GitHub</p>
+                </div>
+                <a
+                  class="project-arrow"
+                  href="https://github.com/MMM7788i/freebies"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View Freebies GitHub repository"
+                  >↗</a
+                >
+              </div>
+              <div class="project-tags">
+                <span>Netlify</span><span>GitHub</span>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art project-art-two">
+                <a
+                  class="live-project-preview"
+                  href="https://soft68.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit the Soft live website"
+                >
+                  <span class="live-project-status">LIVE WEBSITE</span>
+                  <strong>MMM7788i<span>/soft</span></strong>
+                  <span class="live-project-visit">Visit website ↗</span>
+                </a>
+              </div>
+              <div class="project-meta">
+                <div>
+                  <h3>Soft</h3>
+                  <p>Live website and source code on GitHub</p>
+                </div>
+                <a
+                  class="project-arrow"
+                  href="https://github.com/MMM7788i/soft.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View Soft GitHub repository"
+                  >↗</a
+                >
+              </div>
+              <div class="project-tags">
+                <span>Netlify</span><span>GitHub</span>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art project-art-three">
+                <a
+                  class="live-project-preview"
+                  href="https://porten16.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit the Porten live website"
+                >
+                  <span class="live-project-status">LIVE WEBSITE</span>
+                  <strong>MMM7788i<span>/porten</span></strong>
+                  <span class="live-project-visit">Visit website ↗</span>
+                </a>
+              </div>
+              <div class="project-meta">
+                <div>
+                  <h3>Porten</h3>
+                  <p>Live website and source code on GitHub</p>
+                </div>
+                <a
+                  class="project-arrow"
+                  href="https://github.com/MMM7788i/porten"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View Porten GitHub repository"
+                  >↗</a
+                >
+              </div>
+              <div class="project-tags">
+                <span>Netlify</span><span>GitHub</span>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art project-art-one">
+                <a
+                  class="live-project-preview"
+                  href="https://mohid1.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit the Mohid1 live website"
+                >
+                  <span class="live-project-status">LIVE WEBSITE</span>
+                  <strong>Mohid1</strong>
+                  <span class="live-project-visit">Visit website ↗</span>
+                </a>
+              </div>
+              <div class="project-meta">
+                <div>
+                  <h3>Mohid1</h3>
+                  <p>Live website and source code on GitHub</p>
+                </div>
+                <a
+                  class="project-arrow"
+                  href="https://github.com/MMM7788i/mohid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View Mohid1 GitHub repository"
+                  >↗</a
+                >
+              </div>
+              <div class="project-tags">
+                <span>Netlify</span><span>GitHub</span>
               </div>
             </article>
           </div>
